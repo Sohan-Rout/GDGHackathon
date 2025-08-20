@@ -4,9 +4,9 @@ import { FaWhatsapp, FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between bg-white shadow-md mx-10 my-4 px-6 py-3 rounded-full">
+    <nav className="flex items-center justify-between bg-white shadow-md mx-6 px-6 py-3 rounded-full">
       {/* Brand */}
-      <div className="text-xl font-bold text-gray-800">
+      <div>
         <Image width={300} height={100} src="/gdg.svg" alt="Logo"/>
       </div>
 
