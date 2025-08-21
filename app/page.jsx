@@ -1,6 +1,7 @@
 import Navbar from "@/app/components/navbar";
 import CardSwap, { Card } from "@/app/components/hero";
 import Prizes from "@/app/components/prizes";
+import Tracks from "@/app/components/tracks";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function HomePage() {
@@ -53,6 +54,9 @@ export default function HomePage() {
 
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Prizes/>
+      </div>
+      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+        <Tracks />
       </div>
     </>
   );
