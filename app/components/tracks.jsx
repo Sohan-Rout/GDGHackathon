@@ -1,4 +1,3 @@
-/* TracksBoard.jsx */
 "use client";
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
@@ -22,7 +21,6 @@ const tracksData = [
 
 const key = "tracksState";
 
-/* ---------- helpers ---------- */
 const randomPos = () => ({
   x: 100 + Math.random() * 800,
   y: 100 + Math.random() * 400,
@@ -32,11 +30,10 @@ export default function TracksBoard() {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
   const [selected, setSelected] = useState(new Set());
-  const [connecting, setConnecting] = useState(null); // {fromId, port:'out'}
+  const [connecting, setConnecting] = useState(null);
 
   const svgRef = useRef(null);
 
-  /* ------------- init & localStorage ------------- */
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem(key) || "{}");
     setNodes(
