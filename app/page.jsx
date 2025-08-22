@@ -33,6 +33,10 @@ export default function HomePage() {
               </div>
               <span className="border bg-white text-neutral-600 border-black shadow-xl rounded-md px-6 py-2">Deadline 27 August 2025</span>
             </div>
+            <div className="flex gap-4 items-center mt-8">
+              <span className="text-neutral-500">Powered By</span>
+              <img src="./Unstop.png" width={125}></img>
+            </div>
           </div>
           <div className="">
           <div style={{ width: "600px", height: "450px", position: "relative" }}>
