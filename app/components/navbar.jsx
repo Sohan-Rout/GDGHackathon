@@ -15,13 +15,13 @@ const Navbar = () => {
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
           <FaWhatsapp size={20} />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+        <a href="https://www.instagram.com/gdg.dce?igsh=MXNmaHdrYjRlc3k1aQ%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
           <FaInstagram size={20} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+        <a href="https://www.youtube.com/@gdgdce" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
           <FaYoutube size={20} />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+        <a href="https://discord.com/invite/KzGhr4whKn" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
           <FaDiscord size={20} />
         </a>
       </div>

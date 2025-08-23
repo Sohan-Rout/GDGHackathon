@@ -18,7 +18,7 @@ export default function Footer() {
             onClick={() =>
               window.open("https://github.com/Sohan-Rout/GDGHackathon")
             }
-            className="bg-white items-center gap-2 flex rounded-full shadow-xl hover:scale-105 shadow-neutral-800 text-black px-4 py-1"
+            className="bg-white items-center gap-2 flex rounded-full shadow-xl hover:scale-105 duration-300 shadow-neutral-800 text-black px-4 py-1"
           >
             <Github size={20}/>Github
           </button>
