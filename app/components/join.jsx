@@ -2,7 +2,7 @@ import { FaBoxArchive } from "react-icons/fa6";
 
 export default function JoinSection() {
   return (
-    <section className="relative py-20 mx-10 bg-white text-center text-black rounded-xl shadow-lg overflow-hidden">
+    <section className="py-12 relative py-20 mx-10 bg-white text-center text-black rounded-xl shadow-lg overflow-hidden">
       <div className="absolute inset-0 grid grid-cols-6 gap-4 opacity-40">
         {Array.from({ length: 30 }).map((_, i) => (
           <div key={i} className="bg-gray-100 rounded-lg"></div>
@@ -22,7 +22,7 @@ export default function JoinSection() {
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="https://unstop.com/p/hack-o-relay-40-dronacharya-college-of-engineering-dce-gurgaon-1546121"
+            href="https://unstop.com/p/hack-o-relay-40-dronacharya-college-of-engineering-dce-gurgaon-1544646"
             className="px-6 py-3 bg-black text-white rounded-full shadow-md hover:scale-105 transition"
           >
             Join Now

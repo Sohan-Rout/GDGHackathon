@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --- Mobile-first global tweaks --- */
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply bg-black text-white overflow-x-hidden; }
+  img, video { max-width: 100%; height: auto; }
+}
+
+@layer utilities {
+  .container { @apply max-w-7xl mx-auto px-4; }
+}
+
+@layer components {
+  .responsive-table { @apply w-full overflow-x-auto block; }
+  table { @apply min-w-full; }
+  .card { @apply rounded-2xl border border-white/10 p-4 md:p-6 bg-white/5 backdrop-blur; }
+  .clamp-title { font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.1; }
+}
