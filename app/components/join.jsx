@@ -1,3 +1,5 @@
+import { FaBoxArchive } from "react-icons/fa6";
+
 export default function JoinSection() {
   return (
     <section className="relative py-20 mx-10 bg-white text-center text-black rounded-xl shadow-lg overflow-hidden">
@@ -7,6 +9,12 @@ export default function JoinSection() {
         ))}
       </div>
       <div className="relative z-10">
+        <div className="flex justify-center my-2">
+            <div className="flex items-center gap-2 bg-white px-4 py-1 border border-black rounded-full">
+            <FaBoxArchive />
+            <span className="uppercase">Get Started</span>
+            </div>
+        </div>
         <h2 className="text-3xl font-bold mb-4">Ready to Join the Hackathon?</h2>
         <p className="text-sm text-neutral-600 mb-8 max-w-xl mx-auto">
           Showcase your skills, collaborate with innovators, and build something amazing.
