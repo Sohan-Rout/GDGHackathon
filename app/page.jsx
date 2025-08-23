@@ -3,6 +3,7 @@ import CardSwap, { Card } from "@/app/components/hero";
 import Prizes from "@/app/components/prizes";
 import Tracks from "@/app/components/tracks";
 import Judges from "@/app/components/judges";
+import JoinSection from "@/app/components/join";
 import Footer from "@/app/components/footer";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -66,6 +67,9 @@ export default function HomePage() {
       </div>
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Judges />
+      </div>
+      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+        <JoinSection />
       </div>
       <div>
         <Footer />

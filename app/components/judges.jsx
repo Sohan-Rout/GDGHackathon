@@ -1,6 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { UserStar } from "lucide-react";
+import { motion } from "framer-motion";
+import gsap from "gsap";
 
 const judgesDay1 = [
   {
@@ -99,6 +101,23 @@ export default function JudgesSection() {
 
   const judges = activeDay === "day1" ? judgesDay1 : judgesDay2;
 
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      const ctx = gsap.context(() => {
+        const width = carouselRef.current.scrollWidth / 2;
+        gsap.to(carouselRef.current, {
+          x: -width,
+          duration: 20,
+          ease: "linear",
+          repeat: -1,
+        });
+      }, carouselRef);
+      return () => ctx.revert();
+    }
+  }, [judges]);
+
   return (
     <section>
       <div className="flex flex-col items-center py-4">
@@ -111,48 +130,56 @@ export default function JudgesSection() {
         </span>
       </div>
 
-      <div className="flex items-center justify-center gap-3 mb-6">
-        <div className="flex rounded-full border border-gray-400 overflow-hidden">
+      <div className="flex items-center justify-center gap-3">
+        <div className="flex items-center gap-2 bg-gray-200 rounded-full">
           <button
             onClick={() => setActiveDay("day1")}
-            className={`px-6 py-2 text-sm font-medium transition-colors ${
+            className={`px-6 py-2 text-sm font-medium rounded-full transition-colors ${
               activeDay === "day1"
                 ? "bg-black text-white"
-                : "bg-white text-black"
+                : "bg-transparent text-black"
             }`}
           >
             Day 1
           </button>
           <button
             onClick={() => setActiveDay("day2")}
-            className={`px-6 py-2 text-sm font-medium transition-colors ${
+            className={`px-6 py-2 text-sm font-medium rounded-full transition-colors ${
               activeDay === "day2"
                 ? "bg-black text-white"
-                : "bg-white text-black"
+                : "bg-transparent text-black"
             }`}
           >
             Day 2
           </button>
         </div>
       </div>
+      <div className="flex items-center justify-center py-2 pb-6">
+        <span className="text-sm text-neutral-600">Click on days to toggle the information</span>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {judges.map((j, i) => (
-          <div
-            key={i}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex flex-col"
-          >
-            <img
-              src={j.imageSrc}
-              alt={j.name}
-              className="w-full h-48 object-cover rounded"
-            />
-            <h3 className="font-semibold text-lg mt-3">{j.name}</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              {j.caption}
-            </p>
-          </div>
-        ))}
+      <div className="overflow-hidden w-full">
+        <motion.div
+          ref={carouselRef}
+          className="flex gap-6"
+        >
+          {[...judges, ...judges].map((j, i) => (
+            <div
+              key={i}
+              className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 flex-shrink-0 w-64"
+            >
+              <img
+                src={j.imageSrc}
+                alt={j.name}
+                className="w-full h-48 object-cover rounded"
+              />
+              <h3 className="font-semibold text-lg mt-3">{j.name}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                {j.caption}
+              </p>
+            </div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
