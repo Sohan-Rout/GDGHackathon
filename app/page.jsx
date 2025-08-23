@@ -3,6 +3,7 @@ import CardSwap, { Card } from "@/app/components/hero";
 import Prizes from "@/app/components/prizes";
 import Tracks from "@/app/components/tracks";
 import Judges from "@/app/components/judges";
+import Footer from "@/app/components/footer";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function HomePage() {
@@ -37,7 +38,7 @@ export default function HomePage() {
             </div>
             <div className="flex gap-4 items-center mt-8">
               <span className="text-neutral-500">Powered By</span>
-              <img src="./Unstop.png" width={125}></img>
+              <img src="./Unstop.png" className="grayscale" width={90}></img>
             </div>
           </div>
           <div className="">
@@ -66,7 +67,9 @@ export default function HomePage() {
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Judges />
       </div>
-      
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }
