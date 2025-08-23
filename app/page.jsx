@@ -33,7 +33,7 @@ export default function HomePage() {
             <div className="flex gap-2 items-center pt-10">
               <div className="flex items-center gap-2 bg-black hover:scale-105 duration-300 text-white px-6 py-2 shadow-xl rounded-md">
                 <GoArrowUpRight className="text-lg"/>
-                <a href="#">Join Now</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmkkEQnobhO_Pf2JuDt2BTOil26vgl2M8DJYGm4RPwyt70kQ/viewform">Join Now</a>
               </div>
               <span className="border bg-white text-neutral-600 border-black shadow-xl rounded-md px-6 py-2">Deadline 27 August 2025</span>
             </div>
