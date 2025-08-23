@@ -65,9 +65,11 @@ export default function HomePage() {
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Tracks />
       </div>
+      {/*
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Judges />
       </div>
+      */}
       <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <JoinSection />
       </div>
