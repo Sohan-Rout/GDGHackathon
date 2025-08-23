@@ -21,17 +21,17 @@ const prizeVariants = {
 const prizeObjects = [
   {
     type: "Winner",
-    amount: "Rs 20,000",
+    amount: "Rs 8,000",
     color: "text-amber-500",
   },
   {
     type: "First Runner Up",
-    amount: "Rs 10,000",
+    amount: "Rs 5,000",
     color: "text-gray-500",
   },
   {
     type: "Second Runner Up",
-    amount: "Rs 5,000",
+    amount: "Rs 3,000",
     color: "text-orange-950",
   },
 ];
@@ -63,7 +63,7 @@ const Prizes = () => {
             <span>
               <GiTrophy className="text-8xl" />
             </span>
-            <span className="pt-2 text-blue-500">Rs. 35,000</span>
+            <span className="pt-2 text-blue-500">Rs. 16,000</span>
           </div>
         </motion.div>
 

@@ -2,21 +2,18 @@
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Circle } from "lucide-react";
-import { FaRobot, FaAppStoreIos, FaAws, FaDatabase, FaGamepad, FaLightbulb } from "react-icons/fa";
+import { FaRobot, FaAppStoreIos, FaAws, FaGamepad } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { GoIssueTracks } from "react-icons/go";
-import { SiBlockchaindotcom, SiCyberdefenders } from "react-icons/si";
+import { SiCyberdefenders } from "react-icons/si";
 
 const tracksData = [
   { title: "AI & ML", desc: "Innovate with artificial intelligence and machine learning.", icon: <FaRobot className="w-8 h-8 text-sky-500" /> },
-  { title: "Blockchain", desc: "Explore decentralized technologies and applications.", icon : <SiBlockchaindotcom className="w-8 h-8 text-sky-500" /> },
   { title: "Cybersecurity", desc: "Secure systems and protect data from threats.", icon : <SiCyberdefenders className="w-8 h-8 text-sky-500" /> },
   { title: "Web Development", desc: "Build modern, scalable web applications.", icon: <CgWebsite className="w-8 h-8 text-sky-500" /> },
   { title: "Mobile Development", desc: "Create cutting-edge mobile apps.", icon: <FaAppStoreIos className="w-8 h-8 text-sky-500" /> },
-  { title: "IoT", desc: "Connect devices and build smart solutions.", icon : <FaLightbulb className="w-8 h-8 text-sky-500" /> },
-  { title: "Game Development", desc: "Design immersive gaming experiences.", icon : <FaGamepad className="w-8 h-8 text-sky-500" /> },
+  { title: "Open Innovation", desc: "Design immersive experiences of your choice.", icon : <FaGamepad className="w-8 h-8 text-sky-500" /> },
   { title: "Cloud Computing", desc: "Leverage cloud platforms for scalable solutions.", icon : <FaAws className="w-8 h-8 text-sky-500"/> },
-  { title: "Data Science", desc: "Analyze and visualize data to uncover insights.", icon : <FaDatabase className="w-8 h-8 text-sky-500" /> },
 ];
 
 const key = "tracksState";
