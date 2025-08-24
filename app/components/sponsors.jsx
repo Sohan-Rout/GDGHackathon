@@ -21,6 +21,7 @@ const SponsorsCarousel = () => {
     "/CodingNinjas.png",
     "/gloskee.png",
     "/Unstop.png",
+    "/codecrafters.png",
   ];
 
   // Calculate how many copies we need based on screen width
@@ -30,7 +31,7 @@ const SponsorsCarousel = () => {
 
   return (
     <>
-      <h2 className="text-neutral-500 text-4xl my-4 text-center">Our Sponsors</h2>
+      <h2 className="text-neutral-500 text-4xl mb-2 md:mt-6 mt-14 text-center">Our Sponsors</h2>
       <div
         style={{
           overflow: "hidden",
