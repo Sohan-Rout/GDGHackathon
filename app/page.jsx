@@ -10,11 +10,11 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function HomePage() {
   return (
     <>
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Navbar />
       </div>
 
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0 border-r border-l py-6 border-b border-dashed border-neutral-400">
         <div className="flex">
           <div className="flex flex-col justify-center px-10">
             <div>
@@ -43,34 +43,51 @@ export default function HomePage() {
             </div>
           </div>
           <div className="">
-          <div style={{ width: "600px", height: "450px", position: "relative" }}>
-          <CardSwap
-            cardDistance={60}
-            verticalDistance={70}
-            delay={2500}
-            pauseOnHover={false}
-          >
-            <Card imageSrc="/firebase.jpeg" />
-            <Card imageSrc="/gemini.png"/>
-            <Card imageSrc="/studio.png"/>
-          </CardSwap>
+            <div className="hidden sm:block">
+              <div style={{ width: "600px", height: "450px", position: "relative" }}>
+                <CardSwap
+                  cardDistance={60}
+                  verticalDistance={70}
+                  delay={2500}
+                  pauseOnHover={false}
+                >
+                  <Card imageSrc="/firebase.jpeg" />
+                  <Card imageSrc="/gemini.png"/>
+                  <Card imageSrc="/studio.png"/>
+                </CardSwap>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+        {/* Mobile CardSwap */}
+        <div className="sm:hidden mt-6 flex justify-center">
+          <div style={{ width: "5px", height: "225px", position: "relative" }}>
+            <CardSwap
+              cardDistance={60}
+              verticalDistance={70}
+              delay={2500}
+              pauseOnHover={false}
+            >
+              <Card imageSrc="/firebase.jpeg" />
+              <Card imageSrc="/gemini.png"/>
+              <Card imageSrc="/studio.png"/>
+            </CardSwap>
+          </div>
         </div>
       </div>
 
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Prizes/>
       </div>
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Tracks />
       </div>
       {/*
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
         <Judges />
       </div>
       */}
-      <div className="mx-10 border-r border-l py-6 border-b border-dashed border-neutral-400">
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
         <JoinSection />
       </div>
       <div>
