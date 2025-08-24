@@ -61,10 +61,10 @@ export default function HomePage() {
         </div>
         {/* Mobile CardSwap */}
         <div className="sm:hidden mt-6 flex justify-center">
-          <div style={{ width: "5px", height: "225px", position: "relative" }}>
+          <div style={{ width: "0px", height: "200px", position: "relative" }}>
             <CardSwap
               cardDistance={60}
-              verticalDistance={70}
+              verticalDistance={50}
               delay={2500}
               pauseOnHover={false}
             >
