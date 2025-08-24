@@ -12,6 +12,9 @@ export const metadata = {
     title: 'Hack\'O\'relay-4.0',
     description: 'Code. Create. Conquer. 36-Hour Innovation Challenge. A Hackathon for the Next Generation of Developers.',
     url: 'gdg-hackathon-five.vercel.app',
+    icons: {
+    icon: '/icon.png',
+    },
     siteName: 'HackORelay',
     images: [
       {

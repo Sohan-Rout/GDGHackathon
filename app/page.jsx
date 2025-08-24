@@ -1,5 +1,6 @@
 import Navbar from "@/app/components/navbar";
 import CardSwap, { Card } from "@/app/components/hero";
+import SponsorsCarousel from "@/app/components/sponsors";
 import Prizes from "@/app/components/prizes";
 import Tracks from "@/app/components/tracks";
 import Judges from "@/app/components/judges";
@@ -74,6 +75,10 @@ export default function HomePage() {
             </CardSwap>
           </div>
         </div>
+      </div>
+
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
+        <SponsorsCarousel />
       </div>
 
       <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
