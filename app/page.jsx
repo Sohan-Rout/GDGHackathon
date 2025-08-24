@@ -20,17 +20,17 @@ export default function HomePage() {
             <div>
               <span className="px-4 py-2 text-xs rounded-full bg-black text-white uppercase">Introducing</span>
             </div>
-            <h1 className="pt-8 text-5xl text-black">Hack'O'Relay 4.0</h1>
-            <p className="pt-4 text-lg text-neutral-500">
+            <h1 className="pt-8 text-4xl md:text-5xl sm:text-4xl text-black">Hack'O'Relay 4.0</h1>
+            <p className="pt-4 md:text-lg sm:text-xs text-neutral-500">
               Code. Create. Conquer.
             </p>
-            <p className="text-lg text-neutral-500">
-              DCE's Premier 36-Hour Innovation Challenge. 
+            <p className="md:text-lg sm:text-xs text-neutral-500">
+              Premier 36-Hour Innovation Challenge. 
             </p>
-            <p className="text-lg text-neutral-500">
+            <p className="md:text-lg sm:text-xs text-neutral-500">
               A Hackathon for the Next Generation of Developers.
             </p>
-            <div className="flex gap-2 items-center pt-10">
+            <div className="flex flex-col sm:flex-row gap-2 items-center md:pt-10 pt-5">
               <div className="flex items-center gap-2 bg-black hover:scale-105 duration-300 text-white px-6 py-2 shadow-xl rounded-md">
                 <GoArrowUpRight className="text-lg"/>
                 <a href="https://unstop.com/p/hack-o-relay-40-dronacharya-college-of-engineering-dce-gurgaon-1544646">Join Now</a>
