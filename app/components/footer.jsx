@@ -12,7 +12,7 @@ export default function Footer() {
             Made with love by
           </span>
         </div>
-        <div className="flex sm:flex-col md:flex-row md:gap-2 items-center text-xs text-neutral-300 underline underline-offset-2 py-2">
+        <div className="flex flex-row gap-2 items-center text-xs text-neutral-300 underline underline-offset-2 py-2">
           <a href="https://www.linkedin.com/in/sohan-rout/">Sohan Rout</a>
           <a href="https://www.linkedin.com/in/ayush-thakur-542bb4202/">Ayush Thakur</a>
           <a href="https://www.linkedin.com/in/akshitbhandaricodes/">Akshit Bhandari</a>
