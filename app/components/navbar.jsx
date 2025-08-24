@@ -7,10 +7,21 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-4 py-3 md:px-8 sticky rounded-full top-0 z-50">
+    <nav className="relative bg-white shadow-md px-4 py-3 md:px-8 sticky rounded-full top-0 z-50">
       <div className="flex items-center justify-between">
+        {/* Center - Logo */}
+        <div className="flex justify-center md:justify-start flex-1">
+          <Image
+            width={160}
+            height={60}
+            src="/gdg.svg"
+            alt="Logo"
+            className="h-auto w-50 md:w-60"
+          />
+        </div>
+
         {/* Left - Hamburger (mobile only) */}
-        <div className="md:hidden">
+        <div className="md:hidden ml-auto">
           <button
             className="inline-flex items-center justify-center p-2 rounded-md border bg-black"
             aria-controls="mobile-menu"
@@ -32,17 +43,6 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        </div>
-
-        {/* Center - Logo */}
-        <div className="flex justify-center md:justify-start flex-1">
-          <Image
-            width={160}
-            height={60}
-            src="/gdg.svg"
-            alt="Logo"
-            className="h-auto w-32 md:w-40"
-          />
         </div>
 
         {/* Right - Social Links (desktop only) */}
@@ -86,7 +86,7 @@ const Navbar = () => {
       {open && (
         <div
           id="mobile-menu"
-          className="md:hidden mt-3 bg-black text-white rounded-lg p-4 flex flex-col gap-3"
+          className="absolute right-4 mt-2 bg-black text-white rounded-lg p-4 flex flex-col gap-3 md:hidden"
         >
           <a
             href="https://twitter.com"
