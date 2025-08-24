@@ -38,8 +38,8 @@ const prizeObjects = [
 
 const Prizes = () => {
   return (
-    <section className="py-12 w-full flex flex-col items-center py-16">
-      <div className="flex bg-white mt-10 justify-center mb-4 font-mono shadow-xl border-black rounded-full border items-center px-6 py-2">
+    <section className="w-full px-6 flex flex-col items-center py-12">
+      <div className="flex bg-white text-black mt-10 justify-center mb-4 font-mono shadow-xl border-black rounded-full border items-center px-6 py-2">
         <LiaAwardSolid className="text-2xl" />
         <h2 className="text-xl uppercase">Prizes</h2>
       </div>
