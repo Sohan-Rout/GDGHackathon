@@ -8,10 +8,15 @@ export default function Footer() {
         <div className="text-2xl py-2 text-neutral-300">@2025, Hack'O'Relay</div>
         <div className="text-blue-500 gap-1 items-center flex flex-row">
           <Heart color="red" size={20}/>
-          <span className="text-neutral-300 text-sm py-2">
-            Made with love by Technical Team
+          <span className="text-neutral-300 text-sm">
+            Made with love by
           </span>
         </div>
+        <div className="flex sm:flex-col md:flex-row md:gap-2 items-center text-xs text-neutral-300 underline underline-offset-2 py-2">
+          <a href="https://www.linkedin.com/in/sohan-rout/">Sohan Rout</a>
+          <a href="https://www.linkedin.com/in/ayush-thakur-542bb4202/">Ayush Thakur</a>
+          <a href="https://www.linkedin.com/in/akshitbhandaricodes/">Akshit Bhandari</a>
+          </div>
         <div className="text-white flex gap-2 items-center">
             <span className="text-sm">Star the repo on</span>
           <button

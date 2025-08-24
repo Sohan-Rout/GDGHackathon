@@ -18,10 +18,18 @@ const tracksData = [
 
 const key = "tracksState";
 
-const randomPos = () => ({
-  x: 100 + Math.random() * 800,
-  y: 100 + Math.random() * 400,
-});
+const randomPos = () => {
+  if (typeof window !== "undefined" && window.innerWidth < 640) {
+    return {
+      x: 20 + Math.random() * 280,
+      y: 100 + Math.random() * 400,
+    };
+  }
+  return {
+    x: 100 + Math.random() * 900,
+    y: 100 + Math.random() * 500,
+  };
+};
 
 export default function TracksBoard() {
   const [nodes, setNodes] = useState([]);
@@ -90,7 +98,7 @@ export default function TracksBoard() {
   /* ------------- render ------------- */
   return (
     <main
-      className="w-full h-screen relative overflow-hidden"
+      className="w-full h-[120vh] sm:h-screen relative overflow-hidden"
       style={{
         backgroundImage: "radial-gradient(circle, #d1d5db 1px, transparent 1px)",
         backgroundSize: "20px 20px",
@@ -98,7 +106,7 @@ export default function TracksBoard() {
     >
       {/* header */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 flex flex-col items-center z-10">
-        <div className="flex uppercase items-center gap-2 text-xl bg-white border border-black px-4 py-2 rounded-full shadow">
+        <div className="flex uppercase items-center gap-2 text-xl bg-white text-black border border-black px-4 py-2 rounded-full shadow">
           <GoIssueTracks />
           <span>Tracks</span>
         </div>
