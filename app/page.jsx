@@ -20,7 +20,7 @@ export default function HomePage() {
             <div>
               <span className="px-4 py-2 text-xs rounded-full bg-black text-white uppercase">Introducing</span>
             </div>
-            <h1 className="pt-8 text-5xl">Hack'O'Relay 4.0</h1>
+            <h1 className="pt-8 text-5xl text-black">Hack'O'Relay 4.0</h1>
             <p className="pt-4 text-lg text-neutral-500">
               Code. Create. Conquer.
             </p>

@@ -7,7 +7,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md px-4 py-3 md:px-8 sticky top-0 z-50">
+    <nav className="bg-white shadow-md px-4 py-3 md:px-8 sticky rounded-full top-0 z-50">
       <div className="flex items-center justify-between">
         {/* Left - Hamburger (mobile only) */}
         <div className="md:hidden">
