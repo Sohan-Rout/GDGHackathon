@@ -1,5 +1,9 @@
 import "./globals.css";
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 export const metadata = {
   title: "Hack'O'Relay 4.0",
   description: "A 36 hour hacathon oragnized by gdg gurugram",
@@ -25,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-poppins bg-neutral-100">
+      <body className="antialiased bg-neutral-100 font-poppins min-h-screen overflow-x-hidden">
         {children}
       </body>
     </html>
