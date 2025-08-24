@@ -12,7 +12,7 @@ Code. Create. Conquer.Premier 36-Hour Innovation Challenge. A Hackathon for the 
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,js,nextjs,tailwind,express,npm,vercel,github,vscode" />
+    <img src="https://skillicons.dev/icons?i=git,js,nextjs,tailwind,npm,vercel,github,vscode" />
   </a>
 </p>
 
