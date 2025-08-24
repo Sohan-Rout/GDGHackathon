@@ -38,7 +38,7 @@ const prizeObjects = [
 
 const Prizes = () => {
   return (
-    <section className="w-full flex flex-col items-center py-16">
+    <section className="py-12 w-full flex flex-col items-center py-16">
       <div className="flex bg-white mt-10 justify-center mb-4 font-mono shadow-xl border-black rounded-full border items-center px-6 py-2">
         <LiaAwardSolid className="text-2xl" />
         <h2 className="text-xl uppercase">Prizes</h2>
@@ -48,7 +48,7 @@ const Prizes = () => {
           Join 100+ participants in the ultimate showdown
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-1 sm:grid-cols-2 gap-12 w-full max-w-4xl">
         {/* Left side - Prize Pool */}
         <motion.div
           className="flex flex-col items-center justify-center bg-black text-white font-bold text-2xl rounded-lg shadow-xl"
