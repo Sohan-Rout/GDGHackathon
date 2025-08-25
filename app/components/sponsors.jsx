@@ -16,12 +16,12 @@ const SponsorsCarousel = () => {
   }, []);
 
   const sponsors = [
-    "/smash.png",
-    "/sybgen.png", 
-    "/CodingNinjas.png",
-    "/gloskee.png",
-    "/Unstop.png",
-    "/codecrafters.png",
+    { src: "/smash.png", url: "https://smaaash.in" },
+    { src: "/sybgen.png", url: "https://sybgen.com" },
+    { src: "/CodingNinjas.png", url: "https://www.codingninjas.com" },
+    { src: "/gloskee.png", url: "https://gloskee.com" },
+    { src: "/Unstop.png", url: "https://unstop.com" },
+    { src: "/codecrafters.png", url: "https://codecrafters.io" },
   ];
 
   // Calculate how many copies we need based on screen width
@@ -88,7 +88,7 @@ const SponsorsCarousel = () => {
             repeatType: "loop"
           }}
         >
-          {sponsorsLoop.map((src, index) => (
+          {sponsorsLoop.map((sponsor, index) => (
             <motion.div
               key={index}
               style={{
@@ -104,17 +104,19 @@ const SponsorsCarousel = () => {
                 transition: { duration: 0.3 }
               }}
             >
-              <img
-                src={src}
-                alt={`Sponsor ${index + 1}`}
-                style={{
-                  height: "60px",
-                  width: "auto",
-                  maxWidth: "120px",
-                  objectFit: "contain",
-                  userSelect: "none",
-                }}
-              />
+              <a href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={sponsor.src}
+                  alt={`Sponsor ${index + 1}`}
+                  style={{
+                    height: "60px",
+                    width: "auto",
+                    maxWidth: "120px",
+                    objectFit: "contain",
+                    userSelect: "none",
+                  }}
+                />
+              </a>
             </motion.div>
           ))}
         </motion.div>
