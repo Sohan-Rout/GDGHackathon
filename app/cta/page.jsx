@@ -7,6 +7,7 @@ export default function Page() {
   const [muted, setMuted] = useState(true);
   const [showCaption, setShowCaption] = useState(true);
   const [showOverlay, setShowOverlay] = useState(true);
+  const [showCoupon, setShowCoupon] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowCaption(false), 5000);
@@ -26,6 +27,7 @@ export default function Page() {
       setMuted(false);
     }
     setShowOverlay(false);
+    setShowCoupon(true);
   };
 
   return (
@@ -62,6 +64,15 @@ export default function Page() {
       <div className="absolute top-0 left-0 w-full">
         <img src="./og.jpeg" alt="Banner" className="w-full object-contain" />
       </div>
+
+      {/* Coupon banner */}
+      {showCoupon && (
+        <div className="absolute top-[20%] left-0 w-full flex justify-center z-10">
+          <div className="bg-yellow-400 text-black text-center mx-6 font-bold px-6 py-2 rounded-lg shadow-lg">
+            Use Code <span className="text-red-600">SMXAC000243</span> on Smaaash for 10% off!
+          </div>
+        </div>
+      )}
 
       {/* Bottom link */}
       <div className="absolute bottom-14 inset-x-0 flex justify-center">
