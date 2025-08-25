@@ -9,7 +9,7 @@ export default function Page() {
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
       >
-        <source src="./vid.mp4" type="video/mp4" />
+        <source src="/vid.mp4" type="video/mp4" />
         Your browser does not support HTML video.
       </video>
 
@@ -19,14 +19,14 @@ export default function Page() {
       </div>
 
       {/* Bottom link */}
-      <div className="absolute bottom-4 inset-x-0 flex justify-center">
+      <div className="absolute bottom-14 inset-x-0 flex justify-center">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSdmkkEQnobhO_Pf2JuDt2BTOil26vgl2M8DJYGm4RPwyt70kQ/viewform?usp=send_form"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-2xl"
+          className="px-8 py-4 text-4xl rounded-full bg-white text-black font-bold shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-2xl"
         >
-          🎉 Click Here !
+            Click Here !
         </a>
       </div>
     </div>
