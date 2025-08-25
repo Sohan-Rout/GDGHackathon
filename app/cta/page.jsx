@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
-import { Volume2, VolumeX, Link } from "lucide-react";
+import { Volume2, VolumeX, Link, Gift } from "lucide-react";
 
 export default function Page() {
   const videoRef = useRef(null);
@@ -32,8 +32,9 @@ export default function Page() {
     <div className="m-0 p-0 h-screen w-screen overflow-hidden relative">
       {showOverlay && (
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/80 text-white text-center px-6">
-          <h1 className="text-3xl font-bold mb-4">Welcome to Hack'O'Relay 4.0</h1>
-          <p className="mb-6">Please continue to enjoy the full experience with sound.</p>
+          <Gift size={60}/>
+          <h1 className="text-3xl font-bold mt-4 mb-2">Dekh lo secret</h1>
+          <p className="mb-6">Continue and watch at your own risk.</p>
           <button
             onClick={handleContinue}
             className="px-6 py-3 rounded-full bg-white text-black font-bold shadow-lg hover:scale-105 transition transform"
