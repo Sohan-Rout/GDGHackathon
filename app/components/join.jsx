@@ -24,7 +24,7 @@ export default function JoinSection() {
         </div>
         <div className="flex justify-center gap-4">
           <a
-            href="https://unstop.com/hackathons/hack-o-relay-40-dronacharya-college-of-engineering-dce-gurgaon-1546121"
+            href="https://forms.gle/ytyKBTuh1VU5kt5H8"
             className="px-6 py-3 bg-black text-white rounded-full shadow-md hover:scale-105 transition"
           >
             Join Now

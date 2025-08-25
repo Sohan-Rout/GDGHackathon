@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-2 items-center md:pt-10 pt-5">
               <div className="flex items-center gap-2 bg-black hover:scale-105 duration-300 text-white px-6 py-2 shadow-xl rounded-md">
                 <GoArrowUpRight className="text-lg"/>
-                <a href="https://unstop.com/p/hack-o-relay-40-dronacharya-college-of-engineering-dce-gurgaon-1546121">Join Now</a>
+                <a href="https://forms.gle/ytyKBTuh1VU5kt5H8">Join Now</a>
               </div>
               <span className="border bg-white text-neutral-600 border-black shadow-xl rounded-md px-6 py-2">Deadline 27 August 2025</span>
             </div>
