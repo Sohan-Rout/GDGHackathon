@@ -9,7 +9,7 @@ export default function Page() {
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
       >
-        <source src="/vid.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dmtvg2mj4/video/upload/v1756129478/lv_0_20250825132111_kdwsis.mp4" type="video/mp4" />
         Your browser does not support HTML video.
       </video>
 
