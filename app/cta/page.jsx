@@ -6,6 +6,7 @@ export default function Page() {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
   const [showCaption, setShowCaption] = useState(true);
+  const [showOverlay, setShowOverlay] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowCaption(false), 5000);
@@ -19,8 +20,29 @@ export default function Page() {
     }
   };
 
+  const handleContinue = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+      setMuted(false);
+    }
+    setShowOverlay(false);
+  };
+
   return (
     <div className="m-0 p-0 h-screen w-screen overflow-hidden relative">
+      {showOverlay && (
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/80 text-white text-center px-6">
+          <h1 className="text-3xl font-bold mb-4">Welcome to Hack'O'Relay 4.0</h1>
+          <p className="mb-6">Please continue to enjoy the full experience with sound.</p>
+          <button
+            onClick={handleContinue}
+            className="px-6 py-3 rounded-full bg-white text-black font-bold shadow-lg hover:scale-105 transition transform"
+          >
+            Continue
+          </button>
+        </div>
+      )}
+
       {/* Background video */}
       <video
         id="bgVideo"
@@ -46,7 +68,7 @@ export default function Page() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdmkkEQnobhO_Pf2JuDt2BTOil26vgl2M8DJYGm4RPwyt70kQ/viewform?usp=send_form"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-8 py-4 text-4xl rounded-full bg-white text-black font-bold shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-2xl"
+          className="flex items-center gap-2 px-8 py-4 text-4xl rounded-full bg-white text-black font-bold shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-2xl animate-[wiggle_1s_ease-in-out_infinite]"
         >
             <Link size={30}/>Click Here !
         </a>
@@ -62,6 +84,12 @@ export default function Page() {
           {showCaption && <span className="text-sm">Tap to unmute</span>}
         </button>
       </div>
+      <style jsx global>{`
+        @keyframes wiggle {
+          0%, 100% { transform: rotate(-3deg); }
+          50% { transform: rotate(3deg); }
+        }
+      `}</style>
     </div>
   );
 }
