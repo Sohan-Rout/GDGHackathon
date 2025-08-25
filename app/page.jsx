@@ -5,6 +5,8 @@ import Prizes from "@/app/components/prizes";
 import Tracks from "@/app/components/tracks";
 import Judges from "@/app/components/judges";
 import JoinSection from "@/app/components/join";
+import Qrs from "@/app/components/qrs";
+import Social from "@/app/components/social";
 import Footer from "@/app/components/footer";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -79,6 +81,10 @@ export default function HomePage() {
 
       <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
         <SponsorsCarousel />
+      </div>
+
+      <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
+        <Social />
       </div>
 
       <div className="md:mx-10 sm:mx-0  border-r border-l py-6 border-b border-dashed border-neutral-400">
