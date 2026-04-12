@@ -24,7 +24,7 @@ export default function JoinSection() {
         </div>
         <div className="flex justify-center gap-4">
           <a
-            href="https://forms.gle/ytyKBTuh1VU5kt5H8"
+            href="https://forms.gle/RmXN1bdstam75Uur5"
             className="px-6 py-3 bg-black text-white rounded-full shadow-md hover:scale-105 transition"
           >
             Join Now

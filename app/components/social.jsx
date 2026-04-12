@@ -54,7 +54,6 @@ const FeaturedSection = ({
                   height="100%"
                   frameBorder="0"
                   scrolling="no"
-                  allowTransparency={true}
                   allowFullScreen={true}
                   className="w-full h-full"
                 ></iframe>

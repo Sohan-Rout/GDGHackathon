@@ -23,12 +23,12 @@ export default function HomePage() {
             <div>
               <span className="px-4 py-2 text-xs rounded-full bg-black text-white uppercase">Introducing</span>
             </div>
-            <h1 className="pt-8 text-4xl md:text-5xl sm:text-4xl text-black">Hack'O'Relay 4.0</h1>
+            <h1 className="pt-8 text-4xl md:text-5xl sm:text-4xl text-black">Hack'O'Relay 5.0</h1>
             <p className="pt-4 md:text-lg sm:text-xs text-neutral-500">
               Code. Create. Conquer.
             </p>
             <p className="md:text-lg sm:text-xs text-neutral-500">
-              Premier 36-Hour Innovation Challenge. 
+              An Innovation Challenge By GDG on Campus DCE. 
             </p>
             <p className="md:text-lg sm:text-xs text-neutral-500">
               A Hackathon for the Next Generation of Developers.
@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-2 items-center md:pt-10 pt-5">
               <div className="flex items-center gap-2 bg-black hover:scale-105 duration-300 text-white px-6 py-2 shadow-xl rounded-md">
                 <GoArrowUpRight className="text-lg"/>
-                <a href="https://forms.gle/ytyKBTuh1VU5kt5H8">Join Now</a>
+                <a href="https://forms.gle/RmXN1bdstam75Uur5">Join Now</a>
               </div>
               <span className="border bg-white text-neutral-600 border-black shadow-xl rounded-md px-6 py-2">Deadline 27 August 2025</span>
             </div>
