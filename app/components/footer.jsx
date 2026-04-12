@@ -159,7 +159,7 @@ export default function Footer() {
               Sohan Rout
             </a>
             <a
-              href="https://www.linkedin.com/in/ayush-thakur-542bb4202/"
+              href="https://www.linkedin.com/in/ankit-yadav-60b4aa331/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-600 underline underline-offset-4 decoration-neutral-300 hover:text-black hover:decoration-black transition-colors"
@@ -167,7 +167,7 @@ export default function Footer() {
               Ankit Yadav
             </a>
             <a
-              href="https://www.linkedin.com/in/akshitbhandaricodes/"
+              href="https://www.linkedin.com/in/manasthakur30/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-600 underline underline-offset-4 decoration-neutral-300 hover:text-black hover:decoration-black transition-colors"
@@ -175,7 +175,7 @@ export default function Footer() {
               Manas Thakur
             </a>
             <a
-              href="https://www.linkedin.com/in/sohan-rout/"
+              href="https://www.linkedin.com/in/amol-kumar-865a2237a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-600 underline underline-offset-4 decoration-neutral-300 hover:text-black hover:decoration-black transition-colors"
@@ -183,7 +183,7 @@ export default function Footer() {
               Amol Kumar
             </a>
             <a
-              href="https://www.linkedin.com/in/sohan-rout/"
+              href="https://www.linkedin.com/in/uttkarsh-bhardwaj/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-600 underline underline-offset-4 decoration-neutral-300 hover:text-black hover:decoration-black transition-colors"
